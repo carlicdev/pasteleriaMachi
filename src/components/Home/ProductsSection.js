@@ -1,17 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import img1 from '../../images/cheesecake3.jpg';
-import img2 from '../../images/cheesecake.jpg';
-import img3 from '../../images/tartaAlmendra.jpg';
-import img4 from '../../images/tartaAlmendra2.jpg';
-import img5 from '../../images/pastelConejito.jpg';
-import img6 from '../../images/pastelConejito2.jpg';
-import img7 from '../../images/pastelZanahoria4.jpg';
-import img8 from '../../images/pastelZanahoria3.jpg';
-import img9 from '../../images/pastelZanahoria4.jpg';
-import img10 from '../../images/pastelZanahoria3.jpg';
-import img11 from '../../images/pastelMilhojas3.jpg';
-import img12 from '../../images/pastelMilhojas2.jpg';
+
 
 const ProductsSection = () => {
     return (
