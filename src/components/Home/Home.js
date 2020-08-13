@@ -11,7 +11,7 @@ const Home = () => {
                     <img src={machiLogo} alt='logo' />
                 </div>
             </div>
-            <div className='parallax flex items-center'>
+            <div className='parallax min-h-screen flex items-center p-6'>
                 <div className='container flex-1 mx-auto p-2'>
                     <p className='text-6xl text-teal-100 font-bold'>
                         Empecemos por el postre!
@@ -19,7 +19,7 @@ const Home = () => {
                 </div>
             </div>
             <Section />
-            <div className='parallax2'></div>
+            <div className='parallax2 min-h-screen'></div>
             <ProductsSection />
         </div>
     )

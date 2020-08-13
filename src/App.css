@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   font-family: 'Chilanka', cursive;
+  height: 100%;
+  margin: 0,
 }
 
 .navbar{
@@ -17,7 +19,7 @@
 
 
 .parallax {
-  height: 1000px;
+  position: relative;
   background-image: url('./images//pastelConejito2.jpg') !important;
   background-attachment: fixed;
   background-position: center;
@@ -26,7 +28,7 @@
 }
 
 .parallax2 {
-  height: 800px;
+  position:relative;
   background-image: url('./images//tartaAlmendra.jpg');
   background-attachment: fixed;
   background-position: center;
