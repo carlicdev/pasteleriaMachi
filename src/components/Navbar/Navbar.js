@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { RiCake2Line } from 'react-icons/ri';
 import machiLogo from './../../images/machiLogo4.png'
 
 const Navbar = () => {

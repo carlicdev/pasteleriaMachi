@@ -1,6 +1,4 @@
 import React from 'react';
-import { RiCake3Line, RiCake2Line } from 'react-icons/ri';
-import { FaCookie } from 'react-icons/fa';
 
 const Section = () => {
     return (

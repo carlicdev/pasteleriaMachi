@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Section from './Section';
 import ProductsSection from './ProductsSection';
 import machiLogo from './../../images/machiLogo2.png';
