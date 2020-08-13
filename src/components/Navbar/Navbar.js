@@ -26,9 +26,9 @@ const Navbar = () => {
             {
                 isOpen && (
                 <div className='px-5 py-3 bg-teal-200'>
-                    <a href='#' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300'>PRODUCTOS</a>
-                    <a href='#' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300'>NOSOTROS</a>
-                    <a href='#' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300'>CONTACTO</a>
+                    <a href='/productos' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300'>PRODUCTOS</a>
+                    <a href='/productos' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300'>NOSOTROS</a>
+                    <a href='/productos' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300'>CONTACTO</a>
                 </div>
                 )
             }
