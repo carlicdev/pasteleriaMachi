@@ -1,38 +1,182 @@
 .App {
   text-align: center;
+  font-family: 'Chilanka', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  z-index: 99;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cover{
+  background-image: url('./images//cover1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 55rem;
+  box-shadow: inset 0 0 0 100vmax rgba(246, 246, 243, 0.4)
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.parallax {
+  height: 1000px;
+  background-image: url('./images//pastelConejito2.jpg') !important;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.parallax2 {
+  height: 800px;
+  background-image: url('./images//tartaAlmendra.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flip-container {
+  perspective: 1000;
+  display: inline-block;
+}
+
+.flip-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card, .front, .back {
+  width: 30rem;
+  height:24rem; 
+}
+
+.card {
+  transition: 1.5s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+}
+.front {
+  z-index: 1;
+  transform: rotateY(180deg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.back {
+  z-index: 2; /* back side, placed above front */
+  transform: rotateY(0deg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#front-1 {
+  background: url("./images//cheesecake.jpg") no-repeat; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#back-1 {
+  background: url("./images//cheesecake3.jpg") no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#front-2 {
+  background: url("./images//pastelConejito2.jpg") no-repeat; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#back-2 {
+  background: url("./images//pastelConejito.jpg") no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#front-3 {
+  background: url("./images//tartaAlmendra2.jpg") no-repeat; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#back-3 {
+  background: url("./images//tartaAlmendra.jpg") no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#front-4 {
+  background: url("./images//pastelZanahoria3.jpg") no-repeat; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#back-4 {
+  background: url("./images//pastelZanahoria4.jpg") no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#front-5 {
+  background: url("./images//pastelFudge2.jpg") no-repeat; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#back-5 {
+  background: url("./images//pastelFudge2.jpg") no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#front-6 {
+  background: url("./images//pastelMilhojas2.jpg") no-repeat; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#back-6 {
+  background: url("./images//pastelMilhojas3.jpg") no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-card {
+  width: 50rem;
+  height:40rem;
+  position: relative;
+  display: inline-block;
+}
+
+.img-card .img-btm {
+  width: 50rem;
+  height:40rem;
+}
+
+.img-card .img-top {
+  width: 50rem;
+  height:40rem;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 98;
+}
+
+.img-card:hover .img-top {
+  display: inline;
 }
