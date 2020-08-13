@@ -1,30 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 import machiLogo from './../../images/machiLogo4.png'
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
-        <div className='flex bg-teal-100 p-4 justify-center navbar sticky top-0'>
-            <li className='mr-6 list-none ml-0 mr-10'>
-                <Link to='/'>
-                    <img src={machiLogo} alt='logo' className='w-16 h-10'/>
-                </Link>
-            </li>
-            <li className='mr-6 list-none mt-2'>
-                <Link to='/productos'>
-                    <p className='text-yellow-600'>PRODUCTOS</p>
-                </Link>
-            </li>
-            <li className='mr-6 list-none mt-2'>
-                <Link to='/about'>
-                    <p className='text-yellow-600'>NOSOTROS</p>
-                </Link>
-            </li>
-            <li className='mr-6 list-none mt-2'>
-                <Link to='/contacto'>
-                    <p className='text-yellow-600'>CONTACTO</p>
-                </Link>
-            </li>         
+        <div className='bg-teal-100'>
+            <div className='flex items-center justify-between px-5 py-4'>
+                <div>
+                    <Link to='/'>
+                        <img src={machiLogo} alt='logo' className='h-10'/>
+                    </Link>
+                </div>
+                <div>
+                    <button onClick={() => setIsOpen(isOpen ? false : true) } type='button' className='text-yellow-600 text-3xl hover:text-yellow-500 focus:outline-none focus:text-yellow-500'>
+                        {
+                            isOpen ? <AiOutlineCloseCircle/> : <GiHamburgerMenu />
+                        }
+                    </button>
+                </div>
+            </div>
+            {
+                isOpen && (
+                <div className='px-5 py-3 bg-teal-200'>
+                    <a href='#' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300'>PRODUCTOS</a>
+                    <a href='#' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300'>NOSOTROS</a>
+                    <a href='#' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300'>CONTACTO</a>
+                </div>
+                )
+            }
         </div>
     )
 }
