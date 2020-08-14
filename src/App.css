@@ -163,20 +163,20 @@ html, body {
 }
 
 .img-card {
-  width: 50rem;
-  height:40rem;
+  width: 25rem;
+  height:20rem;
   position: relative;
   display: inline-block;
 }
 
 .img-card .img-btm {
-  width: 50rem;
-  height:40rem;
+  width: 25rem;
+  height:20rem;
 }
 
 .img-card .img-top {
-  width: 50rem;
-  height:40rem;
+  width: 25rem;
+  height:20rem;
   display: none;
   position: absolute;
   top: 0;

@@ -6,8 +6,8 @@ import machiLogo from './../../images/machiLogo2.png';
 const Home = () => {
     return (
         <div>
-            <div className='container-fluid cover flex'>
-                <div className='container'>
+            <div className='flex justify-center items-center bg-teal-100 min-h-screen min-w-full'>
+                <div className=''>
                     <img src={machiLogo} alt='logo' />
                 </div>
             </div>

@@ -8,7 +8,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className='bg-teal-100'>
+        <div className='bg-teal-100 sticky top-0'>
             <div className='flex items-center justify-between px-5 py-4'>
                 <div>
                     <Link to='/'>
@@ -25,10 +25,10 @@ const Navbar = () => {
             </div>
             {
                 isOpen && (
-                <div className='px-5 py-3 bg-teal-200'>
+                <div className='px-5  py-3 bg-teal-200'>
                     <a href='/productos' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300'>PRODUCTOS</a>
-                    <a href='/productos' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300'>NOSOTROS</a>
-                    <a href='/productos' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300'>CONTACTO</a>
+                    <a href='/nosotros' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300'>NOSOTROS</a>
+                    <a href='/contacto' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300'>CONTACTO</a>
                 </div>
                 )
             }
