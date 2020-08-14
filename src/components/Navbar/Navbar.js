@@ -16,7 +16,7 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div>
-                    <button onClick={() => setIsOpen(isOpen ? false : true) } type='button' className='text-yellow-600 text-3xl hover:text-yellow-500 focus:outline-none focus:text-yellow-500'>
+                    <button onClick={() => setIsOpen(!isOpen) } type='button' className='text-yellow-600 text-3xl hover:text-yellow-500 focus:outline-none focus:text-yellow-500'>
                         {
                             isOpen ? <AiOutlineCloseCircle/> : <GiHamburgerMenu />
                         }
@@ -26,9 +26,9 @@ const Navbar = () => {
             {
                 isOpen && (
                 <div className='px-5  py-3 bg-teal-200'>
-                    <a href='/productos' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300'>PRODUCTOS</a>
-                    <a href='/nosotros' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300'>NOSOTROS</a>
-                    <a href='/contacto' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300'>CONTACTO</a>
+                    <Link to='/productos' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300' onClick={() => setIsOpen(!isOpen)} >PRODUCTOS</Link>
+                    <Link to='/nosotros' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300'onClick={() => setIsOpen(!isOpen)} >NOSOTROS</Link>
+                    <Link to='/contacto' className='block py-1 text-yellow-600 font-semibold rounded hover:bg-teal-300'onClick={() => setIsOpen(!isOpen)} >CONTACTO</Link>
                 </div>
                 )
             }
