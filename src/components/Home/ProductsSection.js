@@ -14,11 +14,11 @@ const ProductsSection = () => {
                 <hr/>
             </div>
             <div className='flex mt-10 lg:mx-12'>
-                <div className='px-1 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:py-48 lg:px-24 lg:w-1/2'>
+                <div className='px-1 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:py-48 lg:px-24 lg:w-1/2 text-justify'>
                     <img className='h-auto w-full object-cover object-center lg:hidden shadow' src={img1} alt='Pastel de Queso' />
-                    <h5 className='mt-6 text-3xl lg:text-4xl font-bold text-yellow-500 title' >PASTEL DE QUESO TIPO ESPAÑOL</h5>
-                    <p className='mt-2 text-xl lg:text-2xl text-gray-900'>Mas esponjoso y cremoso, simplemente se deshace en tu boca ofreciéndote un sabor inigualable de quesos que no vas a poder parar.</p>
-                    <p className='mt-2 text-xl lg:text-2xl font-semibold text-yellow-800'>Algunos de nuestros clientes los prefieren solo, al no ser muy dulce y por su predominante sabor a queso, sin embargo, si agregas salsa de frutos rojos es una combinación perfecta. </p>
+                    <h5 className='mt-6 text-3xl lg:text-3xl font-bold text-yellow-500' >PASTEL DE QUESO TIPO ESPAÑOL</h5>
+                    <p className='mt-2 text-xl lg:text-xl text-yellow-800'>Mas esponjoso y cremoso, simplemente se deshace en tu boca ofreciéndote un sabor inigualable de quesos que no vas a poder parar.</p>
+                    <p className='mt-2 text-xl lg:text-xl text-yellow-800'>Algunos de nuestros clientes los prefieren solo, al no ser muy dulce y por su predominante sabor a queso, sin embargo, si agregas salsa de frutos rojos es una combinación perfecta. </p>
                     <button className='rounded shadow-md  text-yellow-800 font-semibold text-xl px-5 pt-1  mt-5 border border-yellow-600 hover:bg-yellow-600 hover:text-white focus:outline-none'>
                         HACER PEDIDO
                     </button>
@@ -28,9 +28,9 @@ const ProductsSection = () => {
                 </div>
             </div>
             <div className='flex mt-10 lg:mx-12'>
-                <div className='px-1 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:py-48 lg:px-24 lg:w-1/2'>
+                <div className='px-1 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:py-48 lg:px-24 lg:w-1/2 text-justify'>
                     <img className='h-auto w-full object-cover object-center lg:hidden shadow' src={img2} alt='Cheesecake' />
-                    <h5 className='mt-6 text-3xl lg:text-4xl font-bold text-yellow-500 title2' >Crêpe cake de conejito turín</h5>
+                    <h5 className='mt-6 text-3xl lg:text-4xl font-bold text-yellow-500' >CRÊPE CAKE DE CONEJITO TURÍN</h5>
                     <p className='mt-2 text-xl lg:text-2xl text-orange-800'>Cada crepa hecha al momento, cubierta de conejito turin, cubierto de crepa, cubierto de conejito turín... hasta formar un delicioso crêpe cake en donde cada ingrediente se omplementa e integra perfecto para lograr un producto esponjosito y especialmente cremoso en donde el chocolate es el rey.</p>
                     <button className='rounded shadow-md  text-yellow-600 text-xl px-5 pt-1  mt-5 border border-yellow-600 hover:bg-yellow-600 hover:text-white focus:outline-none'>
                         HACER PEDIDO
@@ -41,7 +41,7 @@ const ProductsSection = () => {
                 </div>
             </div>
             <div className='flex mt-10 lg:mx-12'>
-                <div className='px-1 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:py-48 lg:px-24 lg:w-1/2'>
+                <div className='px-1 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:py-48 lg:px-24 lg:w-1/2 text-justify'>
                     <img className='h-auto w-full object-cover object-center lg:hidden shadow' src={img3} alt='Pastel de Conejito' />
                     <h5 className='mt-6 text-3xl lg:text-4xl font-bold text-yellow-500' >PASTEL DE ZANAHORIA</h5>
                     <p className='mt-2 text-xl lg:text-2xl text-yellow-800'>Si eres de los amantes del pastel de zanahoria no te puedes perder el nuestro. Esta receta secreta ha sido favorita de muchos durante años.</p>
@@ -55,7 +55,7 @@ const ProductsSection = () => {
                 </div>
             </div>
             <div className='flex mt-10 lg:mx-12'>
-                <div className='px-1 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:py-48 lg:px-24 lg:w-1/2'>
+                <div className='px-1 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:py-48 lg:px-24 lg:w-1/2 text-justify'>
                     <img className='h-auto w-full object-cover object-center lg:hidden shadow' src={img4} alt='Cheesecake' />
                     <h5 className='mt-6 text-3xl lg:text-4xl font-bold text-yellow-500' >FUDGE DE CHOCOLATE</h5>
                     <p className='mt-2 text-xl lg:text-2xl text-yellow-800'>El favorito de nuestros clientes por mas de 45 años. Deja que este pastel te envuelva con su carácter cremoso y dulce que lo hacen el invitado mas elegante para una ocasión especial.</p>
@@ -69,7 +69,7 @@ const ProductsSection = () => {
                 </div>
             </div>
             <div className='flex mt-10 lg:mx-12'>
-                <div className='px-1 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:py-48 lg:px-24 lg:w-1/2'>
+                <div className='px-1 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:py-48 lg:px-24 lg:w-1/2 text-justify'>
                     <img className='h-auto w-full object-cover object-center lg:hidden shadow' src={img5} alt='Pastel de Conejito' />
                     <h5 className='mt-6 text-3xl lg:text-4xl font-bold text-yellow-500' >TARTA DE ALMENDRAS TOSTADAS</h5>
                     <p className='mt-2 text-xl lg:text-2xl text-yellow-800'>Para los amantes de la almendra y los celíacos. Nuestra Tarta de Almendras Tostadas te dejara sin habla. Las notas envinadas únicas que deja la almendra tostada consumiran tu paladar.</p>
@@ -83,7 +83,7 @@ const ProductsSection = () => {
                 </div>
             </div>
             <div className='flex mt-10 lg:mx-12'>
-                <div className='px-1 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:py-48 lg:px-24 lg:w-1/2'>
+                <div className='px-1 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:py-48 lg:px-24 lg:w-1/2 text-justify'>
                     <img className='h-auto w-full object-cover object-center lg:hidden shadow' src={img6} alt='Cheesecake' />
                     <h5 className='mt-6 text-3xl lg:text-4xl font-bold text-yellow-500' >MIL HOJAS</h5>
                     <p className='mt-2 text-xl lg:text-2xl text-yellow-800'>No has probado un pastel Mil Hojas como el nuestro. Cada rebanada te ofrece una mezcla perfecta de lo crujiente y lo suave con una combinación de sabores de vainilla y crema que te encantarán y su cubierta glaseada con un toque de fudge de chocolate.</p>
