@@ -8,7 +8,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className='bg-teal-100 sticky top-0'>
+        <div className='bg-white shadow sticky top-0'>
             <div className='flex items-center justify-between px-5 py-4'>
                 <div>
                     <Link to='/'>

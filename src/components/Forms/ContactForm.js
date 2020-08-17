@@ -1,10 +1,10 @@
 import React from 'react';
 import img1 from '../../images/pastelFudge2.jpg';
-import logo from '../../images/machiLogo4.png'
+import logo from '../../images/machiLogoM.jpg'
 
 const ContactForm = () => {
     return (
-        <div className='bg-teal-100 border border-gray-400 rounded lg:my-24 lg:mx-10 lg:shadow-xl xl:max-w-5xl xl:mx-auto'>
+        <div className='bg-gray-100 border border-gray-400 rounded lg:my-24 lg:mx-10 lg:shadow-xl xl:max-w-5xl xl:mx-auto'>
             <div className='flex'>
                 <div className='lg:max-w-lg lg:w-1/2 mx-auto'>
                     <img src={img1} alt='img' className='lg:hidden'/>
