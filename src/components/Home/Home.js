@@ -3,6 +3,7 @@ import Section from './Section';
 import Cover from './Cover';
 import ProductCard from '../Products/ProductCard';
 import ProductsMobile from '../Products/ProductsMobile';
+import Testimonial from '../Testimonial/Testimonial';
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
                 <div className='lg:hidden'>
                     <ProductsMobile />
                 </div>
+                <Testimonial />
             </div>
         </div>
     )

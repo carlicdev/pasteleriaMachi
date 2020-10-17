@@ -1,13 +1,18 @@
-import React from 'react'
-import ProductsSection from '../Home/ProductsSection'
+import React from 'react';
+import ProductCard from './ProductCard';
+import ProductsMobile from './ProductsMobile';
 
 const ProductList = () => {
     return (
-        <div>
-            <h1>Hi from ProductList</h1>
-            <ProductsSection />
+        <div className='container mx-auto'>
+            <div className='hidden lg:block'>
+                <ProductCard />
+            </div>
+            <div className='lg:hidden'>
+                <ProductsMobile />
+            </div>
         </div>
     )
 }
 
-export default ProductList
+export default ProductList;
