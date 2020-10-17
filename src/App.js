@@ -12,12 +12,12 @@ function App() {
   return (
     <div className='App bg-gray-100'>
       <Navbar />
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route path='/productos' component={ProductList} />
-        <Route path='/nosotros' component={About} />
-        <Route path='/contacto' component={Contact} />
-      </Switch>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/productos' component={ProductList} />
+          <Route path='/nosotros' component={About} />
+          <Route path='/contacto' component={Contact} />
+        </Switch>
       <Footer />
     </div>
   );
