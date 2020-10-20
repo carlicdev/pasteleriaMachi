@@ -1,6 +1,6 @@
 import React from 'react';
 import img1 from '../../images/pastelFudge2.jpg';
-import logo from '../../images/machiLogoM.jpg'
+import logo from '../../images/machiLogo3.png'
 
 const ContactForm = () => {
     return (
@@ -9,22 +9,22 @@ const ContactForm = () => {
                 <div className='lg:max-w-lg lg:w-1/2 mx-auto'>
                     <img src={img1} alt='img' className='lg:hidden'/>
                     <div className='p-10 text-left'>
-                        <img src={logo} alt='Machi Logo' className='h-24 mx-auto'/>
+                        <img src={logo} alt='Machi Logo' className='h-12 mx-auto mb-5'/>
                         <form>
                             <div className='mb-4'>
-                                <label className='block text-yellow-700 text-sm font-bold mb-2' htmlFor='name'>NOMBRE</label>
+                                <label className='block text-yellow-600 text-sm font-bold mb-2' htmlFor='name'>NOMBRE</label>
                                 <input className='w-full border border-yellow-600 rounded bg-gray-100 focus:outline-none focus:shadow-outline px-3 py-1'/>
                             </div>
                             <div className='mb-4'>
-                                <label className='block text-yellow-700 text-sm font-bold mb-2' htmlFor='name'>CORREO ELECTRÓNICO</label>
+                                <label className='block text-yellow-600 text-sm font-bold mb-2' htmlFor='name'>CORREO ELECTRÓNICO</label>
                                 <input className='w-full border border-yellow-600 rounded bg-gray-100 focus:outline-none focus:shadow-outline px-3 py-1'/>
                             </div>
                             <div className='mb-4'>
-                                <label className='block text-yellow-700 text-sm font-bold mb-2' htmlFor='name'>MENSAJE</label>
+                                <label className='block text-yellow-600 text-sm font-bold mb-2' htmlFor='name'>MENSAJE</label>
                                 <textarea rows='5' className='w-full border border-yellow-600 rounded bg-gray-100 focus:outline-none focus:shadow-outline px-3 py-1'/>
                             </div>
                             <div className='flex'>
-                            <button className='rounded shadow-md ml-auto mr-0 text-yellow-600 text-xl px-5 pt-1  border border-yellow-600 hover:bg-yellow-600 hover:text-white'>
+                            <button className='rounded shadow text-gray-100 ml-auto mr-0 font-semibold px-5 py-2  bg-yellow-800 hover:bg-yellow-900 '>
                                 ENVIAR
                             </button>
                             </div>

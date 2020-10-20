@@ -29,6 +29,35 @@ html, body {
   box-shadow: inset 0 0 0 100vmax rgba(237, 241, 240, 0.11)
 }
 
+.cover-2{
+  background-image: url('./images//barraPasteles3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 100vmax rgba(207, 164, 22, 0.212)
+}
+
+.main-gradient {
+  background: linear-gradient(
+    to right, 
+    #975a16 0%,
+    #b7791f 50%, 
+    #b7791f 50%, 
+    #744210 100%
+  );
+  height: 100%;
+  width: 100%;
+}
+
+.btn-gradient {
+  background: linear-gradient(
+    to right, 
+    #b7791f 0%,
+    #975a16 50%, 
+    #975a16 50%, 
+    #744210 100%
+  );
+}
+
 
 .parallax {
   position: relative;

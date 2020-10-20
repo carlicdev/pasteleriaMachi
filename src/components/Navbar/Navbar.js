@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
-import machiLogo from './../../images/machiLogo4.png'
+import machiLogo from './../../images/machiLogo3.png'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [activeLink, setActiveLink] = useState('home');
 
     
     return (
@@ -19,16 +20,24 @@ const Navbar = () => {
                 </div>
                 <div className='hidden lg:block'>
                     <ul>
-                        <li className='inline mx-5 text-xl text-gray-100 font-semibold bg-yellow-800 p-5 rounded'>
+                        <li className={`${activeLink === 'home' ? 'bg-yellow-800 text-gray-100' : 'text-yellow-600' } inline mx-5 text-xl font-semibold p-5 rounded`}
+                            onClick={() => setActiveLink('home')}
+                        >
                             <Link to='/'>Home</Link>
                         </li>
-                        <li className='inline mx-5 text-xl text-yellow-600 font-semibold p-5 rounded'>
+                        <li className={`${activeLink === 'productos' ? 'bg-yellow-800 text-gray-100' : 'text-yellow-600' } inline mx-5 text-xl font-semibold p-5 rounded`}
+                            onClick={() => setActiveLink('productos')}
+                        >
                             <Link to='/productos'>Productos</Link>
                         </li>
-                        <li className='inline mx-5 text-xl text-yellow-600 font-semibold p-5 rounded'>
+                        <li className={`${activeLink === 'pedidos' ? 'bg-yellow-800 text-gray-100' : 'text-yellow-600' } inline mx-5 text-xl font-semibold p-5 rounded`}
+                            onClick={() => setActiveLink('pedidos')}
+                        >
                             <Link to='/pedidos'>Pedidos</Link>
                         </li>
-                        <li className='inline ml-5 mr-32 text-xl text-yellow-600 font-semibold p-5 rounded'>
+                        <li className={`${activeLink === 'contacto' ? 'bg-yellow-800 text-gray-100' : 'text-yellow-600' } inline mx-5 text-xl font-semibold p-5 rounded`}
+                            onClick={() => setActiveLink('contacto')}
+                        >
                             <Link to='/contacto'>Contacto</Link>
                         </li>
                     </ul>
