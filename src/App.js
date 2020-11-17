@@ -7,10 +7,12 @@ import ProductList from './components/Products/ProductList';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import Modal from './components/Modal/Modal';
 
 function App() {
   return (
     <div className='App bg-gray-100'>
+      <Modal />
       <Navbar />
         <Switch>
           <Route exact path='/' component={Home} />

@@ -77,127 +77,6 @@ html, body {
   background-size: cover;
 }
 
-.flip-container {
-  perspective: 1000;
-  display: inline-block;
-}
-
-.flip-container:hover .card {
-  transform: rotateY(180deg);
-}
-
-.card, .front, .back {
-  width: 30rem;
-  height:24rem; 
-}
-
-.card {
-  transition: 1.5s;
-  transform-style: preserve-3d;
-  position: relative;
-}
-.front, .back {
-  backface-visibility: hidden;
-  position: absolute;
-}
-.front {
-  z-index: 1;
-  transform: rotateY(180deg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.back {
-  z-index: 2; /* back side, placed above front */
-  transform: rotateY(0deg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#front-1 {
-  background: url("./images//cheesecake.jpg") no-repeat; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#back-1 {
-  background: url("./images//cheesecake3.jpg") no-repeat;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#front-2 {
-  background: url("./images//pastelConejito2.jpg") no-repeat; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#back-2 {
-  background: url("./images//pastelConejito.jpg") no-repeat;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#front-3 {
-  background: url("./images//tartaAlmendra2.jpg") no-repeat; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#back-3 {
-  background: url("./images//tartaAlmendra.jpg") no-repeat;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#front-4 {
-  background: url("./images//pastelZanahoria3.jpg") no-repeat; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#back-4 {
-  background: url("./images//pastelZanahoria4.jpg") no-repeat;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#front-5 {
-  background: url("./images//pastelFudge2.jpg") no-repeat; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#back-5 {
-  background: url("./images//pastelFudge2.jpg") no-repeat;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#front-6 {
-  background: url("./images//pastelMilhojas2.jpg") no-repeat; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#back-6 {
-  background: url("./images//pastelMilhojas3.jpg") no-repeat;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .img-card {
   width: 25rem;
   height:20rem;
@@ -222,4 +101,9 @@ html, body {
 
 .img-card:hover .img-top {
   display: inline;
+}
+
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.7)
 }
